@@ -1,240 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>{{first_name}} te invitó a {{workspace_name}}</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{first_name}} te invitó a {{workspace_name}}</title>
 
-    <style>
-      body,
-      table,
-      td,
-      p {
-        margin: 0;
-        padding: 0;
+  <style>
+    body, table, td, p {
+      margin:0;
+      padding:0;
+    }
+
+    img {
+      border:0;
+      line-height:100%;
+      text-decoration:none;
+      -ms-interpolation-mode:bicubic;
+      display:block;
+    }
+
+    table {
+      border-collapse:collapse;
+    }
+
+    /* Responsive real */
+    @media only screen and (max-width:600px) {
+      .email-container {
+        width:100% !important;
       }
 
-      img {
-        border: 0;
-        line-height: 100%;
-        text-decoration: none;
-        -ms-interpolation-mode: bicubic;
+      .email-content {
+        padding:24px 20px !important;
       }
 
-      table {
-        border-collapse: collapse;
+      .header-stack {
+        display:block !important;
+        width:100% !important;
+        text-align:center !important;
       }
 
-      @media only screen and (max-width: 600px) {
-        .email-container {
-          width: 100% !important;
-        }
-
-        .email-content {
-          padding: 24px 20px !important;
-        }
-
-        .email-footer {
-          padding: 0 20px 16px 20px !important;
-        }
+      .header-text {
+        margin-top:10px !important;
+        text-align:center !important;
+        white-space:normal !important;
       }
-    </style>
-  </head>
 
-  <body
-    bgcolor="#f9f9f9"
-    style="
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        sans-serif;
-      color: #474747;
-      background-color: #f9f9f9;
-    "
-  >
-    <!-- Preheader -->
-    <span style="display:none;">
-      {{first_name}} te invitó a unirte a {{workspace_name}}
-    </span>
+      .email-footer {
+        padding:0 20px 16px 20px !important;
+      }
+    }
+  </style>
+</head>
 
-    <center style="width:100%; padding:40px 0; background:#f9f9f9;">
+<body
+  bgcolor="#f9f9f9"
+  style="
+    margin:0;
+    padding:0;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:#474747;
+    background-color:#f9f9f9;
+  "
+>
 
-      <!-- HEADER -->
-      <table width="100%">
-        <tr>
-          <td></td>
-          <td width="620" style="max-width:620px; margin:auto;">
-            <table width="100%" style="background:#11406A;">
-              <tr>
-                <td style="padding:24px 40px;">
-                  <table width="100%">
-                    <tr>
+<!-- Preheader -->
+<span style="display:none;">
+  {{first_name}} te invitó a unirte a {{workspace_name}}
+</span>
 
-                      <!-- Logos izquierda -->
-                      <td align="left" style="vertical-align:middle;">
-                        <table>
-                          <tr>
-                            <td style="padding-right:10px;">
-                              <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Televicentro_HN_logo_2020.png"
-                                width="110"
-                                alt="Televicentro"
-                                style="display:block;"
-                              />
-                            </td>
-                            <td>
-                              <img
-                                src="https://media.docs.plane.so/logo/new-logo-dark.png"
-                                width="110"
-                                alt="Plane"
-                                style="display:block;"
-                              />
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
+<center style="width:100%; background:#f9f9f9; padding:40px 0;">
 
-                      <!-- Texto derecha -->
-                      <td
-                        align="right"
-                        style="
-                          font-size:12px;
-                          color:#cfd8e3;
-                          vertical-align:middle;
-                          white-space:nowrap;
-                        "
-                      >
-                        Plataforma Canvas impulsada por Plane
-                      </td>
+  <!-- HEADER -->
+  <table width="100%">
+    <tr>
+      <td></td>
 
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-          <td></td>
-        </tr>
-      </table>
+      <td width="620" class="email-container" style="max-width:620px; margin:auto;">
+        <table width="100%" style="background:#11406A;">
+          <tr>
+            <td style="padding:24px 40px;">
+              <table width="100%">
+                <tr>
 
-      <!-- BODY -->
-      <table width="100%">
-        <tr>
-          <td></td>
+                  <!-- Logos -->
+                  <td class="header-stack" align="left" style="vertical-align:middle;">
+                    <table>
+                      <tr>
+                        <td style="padding-right:10px;">
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Televicentro_HN_logo_2020.png"
+                            width="110"
+                            alt="Televicentro"
+                          />
+                        </td>
+                        <td>
+                          <img
+                            src="https://media.docs.plane.so/logo/new-logo-dark.png"
+                            width="110"
+                            alt="Plane"
+                          />
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
 
-          <td width="620" style="max-width:620px; margin:auto;">
-            <table
-              width="100%"
-              style="background:#ffffff; padding:32px 40px;"
-            >
-              <tr>
-                <td style="padding:24px; font-size:16px;">
-
-                  <!-- TITLE -->
-                  <h1 style="font-size:22px; color:#111; margin-bottom:12px;">
-                    Únete a {{workspace_name}}
-                  </h1>
-
-                  <!-- TEXT -->
-                  <p style="margin-bottom:12px;">
-                    {{first_name}} te ha invitado a colaborar en el espacio de trabajo
-                    <strong>{{workspace_name}}</strong>.
-                  </p>
-
-                  <!-- BUTTON -->
-                  <table style="margin:20px 0;">
-                    <tr>
-                      <td>
-                        <a
-                          href="{{abs_url}}"
-                          target="_blank"
-                          style="
-                            background-color:#11406A;
-                            border-radius:6px;
-                            color:#ffffff;
-                            padding:12px 24px;
-                            display:inline-block;
-                            font-size:16px;
-                            font-weight:500;
-                            text-decoration:none;
-                          "
-                        >
-                          Aceptar invitación
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-
-                  <!-- FALLBACK -->
-                  <p style="font-size:13px; color:#5f5e5e;">
-                    Si el botón no funciona, copia y pega este enlace:
-                  </p>
-
-                  <p style="margin-top:6px;">
-                    <span style="
-                      font-family:monospace;
-                      background:#f3f3f3;
-                      padding:4px 6px;
-                      border:1px solid #e9e9e9;
-                      border-radius:3px;
+                  <!-- Texto -->
+                  <td
+                    class="header-stack header-text"
+                    align="right"
+                    style="
                       font-size:12px;
-                      word-break:break-all;
-                    ">
-                      {{abs_url}}
-                    </span>
-                  </p>
+                      color:#cfd8e3;
+                      vertical-align:middle;
+                      white-space:nowrap;
+                    "
+                  >
+                    Plataforma Canvas impulsada por Plane
+                  </td>
 
-                  <!-- NOTE -->
-                  <p style="margin-top:16px; font-size:13px; color:#5f5e5e;">
-                    Nota: Esta invitación fue enviada a
-                    <span style="
-                      font-family:monospace;
-                      background:#f3f3f3;
-                      padding:2px 4px;
-                      border-radius:3px;
-                    ">
-                      {{email}}
-                    </span>.
-                    Si no esperabas este correo, puedes ignorarlo.
-                  </p>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
 
-                </td>
-              </tr>
-            </table>
-          </td>
+      <td></td>
+    </tr>
+  </table>
 
-          <td></td>
-        </tr>
-      </table>
+  <!-- BODY -->
+  <table width="100%">
+    <tr>
+      <td></td>
 
-      <!-- FOOTER -->
-      <table width="100%">
-        <tr>
-          <td></td>
+      <td width="620" class="email-container" style="max-width:620px; margin:auto;">
+        <table
+          width="100%"
+          class="email-content"
+          style="background:#ffffff; padding:32px 40px;"
+        >
+          <tr>
+            <td style="padding:24px; font-size:16px; line-height:1.5;">
 
-          <td width="620" style="max-width:620px; margin:auto;">
-            <table width="100%" style="background:#11406A;">
-              <tr>
-                <td
-                  style="
-                    padding:24px;
-                    font-size:12px;
-                    color:#cfd8e3;
-                    border-top:1px solid #ffffff30;
-                  "
-                >
-                  <p style="margin:0;">
-                    Departamento de Tecnología e Información
-                  </p>
-                </td>
-              </tr>
-            </table>
-          </td>
+              <h1 style="font-size:22px; color:#111; margin:0 0 12px;">
+                Únete a {{workspace_name}}
+              </h1>
 
-          <td></td>
-        </tr>
-      </table>
+              <p style="margin:0 0 16px;">
+                {{first_name}} te ha invitado a colaborar en el espacio de trabajo
+                <strong>{{workspace_name}}</strong>.
+              </p>
 
-    </center>
-  </body>
+              <!-- BUTTON -->
+              <table style="margin:20px 0;">
+                <tr>
+                  <td>
+                    <a
+                      href="{{abs_url}}"
+                      target="_blank"
+                      style="
+                        background:#11406A;
+                        border-radius:6px;
+                        color:#fff;
+                        padding:12px 24px;
+                        display:inline-block;
+                        font-size:16px;
+                        font-weight:500;
+                        text-decoration:none;
+                      "
+                    >
+                      Aceptar invitación
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- FALLBACK -->
+              <p style="font-size:13px; color:#5f5e5e;">
+                Si el botón no funciona, copia este enlace:
+              </p>
+
+              <p style="margin-top:6px;">
+                <span style="
+                  font-family:monospace;
+                  background:#f3f3f3;
+                  padding:4px 6px;
+                  border:1px solid #e9e9e9;
+                  border-radius:3px;
+                  font-size:12px;
+                  word-break:break-all;
+                  display:inline-block;
+                ">
+                  {{abs_url}}
+                </span>
+              </p>
+
+              <!-- NOTE -->
+              <p style="margin-top:16px; font-size:13px; color:#5f5e5e;">
+                Esta invitación fue enviada a
+                <span style="
+                  font-family:monospace;
+                  background:#f3f3f3;
+                  padding:2px 4px;
+                  border-radius:3px;
+                ">
+                  {{email}}
+                </span>.
+                Si no esperabas este correo, puedes ignorarlo.
+              </p>
+
+            </td>
+          </tr>
+        </table>
+      </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+  <!-- FOOTER -->
+  <table width="100%">
+    <tr>
+      <td></td>
+
+      <td width="620" class="email-container" style="max-width:620px; margin:auto;">
+        <table width="100%" style="background:#11406A;">
+          <tr>
+            <td
+              style="
+                padding:24px;
+                font-size:12px;
+                color:#cfd8e3;
+                border-top:1px solid #ffffff30;
+              "
+            >
+              <p style="margin:0;">
+                Departamento de Tecnología e Información
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+
+      <td></td>
+    </tr>
+  </table>
+
+</center>
+
+</body>
 </html>
