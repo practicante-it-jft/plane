@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -23,7 +22,7 @@
         border-collapse: collapse;
       }
 
-      /* ✅ Responsive real */
+      /* SOLO MOBILE */
       @media only screen and (max-width: 600px) {
         .email-container {
           width: 100% !important;
@@ -33,18 +32,26 @@
           padding: 24px 20px !important;
         }
 
-        .email-footer {
-          padding: 0 20px 16px 20px !important;
-        }
-
+        /* HEADER SOLO EN MOBILE */
         .header-stack {
           display: block !important;
           width: 100% !important;
           text-align: center !important;
         }
 
+        .header-stack table {
+          margin: 0 auto !important;
+        }
+
         .header-text {
           margin-top: 10px !important;
+          text-align: center !important;
+          white-space: normal !important;
+        }
+
+        /* FOOTER SOLO EN MOBILE */
+        .footer-stack {
+          text-align: center !important;
         }
       }
     </style>
@@ -60,7 +67,7 @@
       background-color:#f9f9f9;
     "
   >
-    <!-- Preheader -->
+
     <span style="display:none;">
       El código {{code}} es válido por 10 minutos.
     </span>
@@ -72,18 +79,15 @@
         <tr>
           <td></td>
 
-          <td
-            width="620"
-            class="email-container"
-            style="max-width:620px; margin:auto;"
-          >
+          <td width="620" class="email-container" style="max-width:620px; margin:auto;">
             <table width="100%" style="background:#11406A;">
               <tr>
                 <td style="padding:24px 40px;">
+
                   <table width="100%">
                     <tr>
 
-                      <!-- Logos -->
+                      <!-- LOGOS (DESKTOP LEFT, MOBILE CENTERED) -->
                       <td class="header-stack" align="left" style="vertical-align:middle;">
                         <table>
                           <tr>
@@ -94,6 +98,7 @@
                                 style="display:block;"
                               />
                             </td>
+
                             <td>
                               <img
                                 src="https://media.docs.plane.so/logo/new-logo-dark.png"
@@ -105,7 +110,7 @@
                         </table>
                       </td>
 
-                      <!-- Texto -->
+                      <!-- TEXTO HEADER -->
                       <td
                         class="header-stack header-text"
                         align="right"
@@ -121,6 +126,7 @@
 
                     </tr>
                   </table>
+
                 </td>
               </tr>
             </table>
@@ -135,11 +141,7 @@
         <tr>
           <td></td>
 
-          <td
-            width="620"
-            class="email-container"
-            style="max-width:620px; margin:auto;"
-          >
+          <td width="620" class="email-container" style="max-width:620px; margin:auto;">
             <table
               class="email-content"
               width="100%"
@@ -155,12 +157,12 @@
                   <p style="margin:12px 0 24px;">
                     <span style="
                       display:inline-block;
-                      padding:8px 14px;
+                      padding:10px 16px;
                       background:#e4e5e7;
                       border-radius:6px;
                       font-family:monospace;
-                      font-size:15px;
-                      letter-spacing:0.14em;
+                      font-size:16px;
+                      letter-spacing:0.2em;
                     ">
                       {{code}}
                     </span>
@@ -198,14 +200,11 @@
         <tr>
           <td></td>
 
-          <td
-            width="620"
-            class="email-container"
-            style="max-width:620px; margin:auto;"
-          >
+          <td width="620" class="email-container" style="max-width:620px; margin:auto;">
             <table width="100%" style="background:#11406A;">
               <tr>
                 <td
+                  class="footer-stack"
                   style="
                     padding:24px;
                     font-size:12px;
@@ -213,9 +212,7 @@
                     border-top:1px solid #ffffff30;
                   "
                 >
-                  <p style="margin:0;">
-                    Departamento de Tecnología e Información
-                  </p>
+                  Departamento de Tecnología e Información
                 </td>
               </tr>
             </table>
