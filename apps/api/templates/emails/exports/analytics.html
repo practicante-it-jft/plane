@@ -22,7 +22,7 @@
         border-collapse: collapse;
       }
 
-      /* Responsive real */
+      /* RESPONSIVE SOLO HEADER + FOOTER */
       @media only screen and (max-width: 600px) {
         .email-container {
           width: 100% !important;
@@ -32,20 +32,26 @@
           padding: 24px 20px !important;
         }
 
-        .email-footer {
-          padding: 0 20px 16px 20px !important;
-        }
-
+        /* HEADER MOBILE */
         .header-stack {
           display: block !important;
           width: 100% !important;
           text-align: center !important;
         }
 
+        .header-stack table {
+          margin: 0 auto !important;
+        }
+
         .header-text {
           margin-top: 10px !important;
           text-align: center !important;
           white-space: normal !important;
+        }
+
+        /* FOOTER MOBILE */
+        .footer-stack {
+          text-align: center !important;
         }
       }
     </style>
@@ -61,7 +67,8 @@
       background-color:#f9f9f9;
     "
   >
-    <!-- Preheader -->
+
+    <!-- PREHEADER -->
     <span style="display:none;">
       El archivo CSV con los datos que solicitaste ya está disponible.
     </span>
@@ -77,10 +84,11 @@
             <table width="100%" style="background:#11406A;">
               <tr>
                 <td style="padding:24px 40px;">
+
                   <table width="100%">
                     <tr>
 
-                      <!-- Logos -->
+                      <!-- LOGOS -->
                       <td class="header-stack" align="left" style="vertical-align:middle;">
                         <table>
                           <tr>
@@ -91,6 +99,7 @@
                                 style="display:block;"
                               />
                             </td>
+
                             <td>
                               <img
                                 src="https://media.docs.plane.so/logo/new-logo-dark.png"
@@ -102,7 +111,7 @@
                         </table>
                       </td>
 
-                      <!-- Texto -->
+                      <!-- TEXTO HEADER -->
                       <td
                         class="header-stack header-text"
                         align="right"
@@ -118,6 +127,7 @@
 
                     </tr>
                   </table>
+
                 </td>
               </tr>
             </table>
@@ -171,6 +181,7 @@
             <table width="100%" style="background:#11406A;">
               <tr>
                 <td
+                  class="footer-stack"
                   style="
                     padding:24px;
                     font-size:12px;
@@ -178,9 +189,7 @@
                     border-top:1px solid #ffffff30;
                   "
                 >
-                  <p style="margin:0;">
-                    Departamento de Tecnología e Información
-                  </p>
+                  Departamento de Tecnología e Información
                 </td>
               </tr>
             </table>
