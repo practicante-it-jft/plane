@@ -23,7 +23,7 @@ img {
   display:block;
 }
 
-/* Responsive real */
+/* RESPONSIVE SOLO HEADER + FOOTER */
 @media only screen and (max-width:600px) {
   .container {
     width:100% !important;
@@ -33,16 +33,26 @@ img {
     padding:24px 20px !important;
   }
 
+  /* HEADER MOBILE */
   .header-stack {
     display:block !important;
     width:100% !important;
     text-align:center !important;
   }
 
+  .header-stack table {
+    margin:0 auto !important;
+  }
+
   .header-text {
     margin-top:10px !important;
     text-align:center !important;
     white-space:normal !important;
+  }
+
+  /* FOOTER MOBILE */
+  .footer-stack {
+    text-align:center !important;
   }
 }
 </style>
@@ -56,10 +66,11 @@ img {
   <table width="600" class="container" style="background:#11406A;">
     <tr>
       <td style="padding:24px 30px;">
+
         <table width="100%">
           <tr>
 
-            <!-- Logos -->
+            <!-- LOGOS -->
             <td class="header-stack" align="left" style="vertical-align:middle;">
               <table>
                 <tr>
@@ -81,7 +92,7 @@ img {
               </table>
             </td>
 
-            <!-- Texto -->
+            <!-- TEXTO HEADER -->
             <td
               class="header-stack header-text"
               align="right"
@@ -97,6 +108,7 @@ img {
 
           </tr>
         </table>
+
       </td>
     </tr>
   </table>
@@ -151,20 +163,20 @@ img {
   <!-- FOOTER -->
   <table width="600" class="container" style="background:#11406A;">
     <tr>
-      <td align="center"
+      <td class="footer-stack"
+          align="center"
           style="
             padding:30px 20px;
             font-size:12px;
             color:#cfd8e3;
             border-top:1px solid #ffffff30;
           ">
-        <p style="margin:0;">
-          Departamento de Tecnología e Información
-        </p>
+        Departamento de Tecnología e Información
       </td>
     </tr>
   </table>
 
 </center>
+
 </body>
 </html>
