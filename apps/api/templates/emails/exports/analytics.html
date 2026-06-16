@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Your Plane Analytics export is ready</title>
+    <title>Tu exportación de datos está lista</title>
 
     <style>
-      /* Basic resets for email clients */
       body,
       table,
       td,
@@ -26,7 +25,6 @@
         border-collapse: collapse;
       }
 
-      /* Mobile adjustments */
       @media only screen and (max-width: 600px) {
         .email-container {
           width: 100% !important;
@@ -50,16 +48,12 @@
       padding: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         sans-serif;
-      font-weight: 400;
       color: #474747;
-      -webkit-font-smoothing: antialiased;
-      -webkit-text-size-adjust: none;
       background-color: #f9f9f9;
     "
   >
-    <!-- Preheader (hidden) -->
+    <!-- Preheader -->
     <span
-      class="preheader"
       style="
         display: none;
         font-size: 1px;
@@ -68,36 +62,25 @@
         max-height: 0;
         max-width: 0;
         opacity: 0;
-        overflow: hidden;
-        mso-hide: all;
-        visibility: hidden;
       "
     >
-      Your requested Plane Analytics data export is attached as a CSV file.
+      El archivo CSV con los datos que solicitaste ya está disponible.
     </span>
 
-    <!-- Outer Wrapper -->
-    <center
-      class="email-body"
-      style="width: 100%; background-color: #f9f9f9; padding: 40px 0;"
-    >
+    <center style="width: 100%; padding: 40px 0; background-color: #f9f9f9;">
+      
       <!-- HEADER -->
-      <table role="presentation" width="100%">
+      <table width="100%">
         <tr>
           <td></td>
-          <td
-            class="email-container"
-            width="620"
-            style="width: 620px; max-width: 620px; margin: 0 auto;"
-          >
-            <table role="presentation" width="100%" style="background-color: #000000;">
+          <td width="620" style="max-width: 620px; margin: auto;">
+            <table width="100%" style="background-color: #11406A;">
               <tr>
-                <td style="padding: 24px 40px; text-align: center;">
+                <td style="padding: 24px; text-align: center;">
                   <img
-                    src="https://media.docs.plane.so/logo/new-logo-dark.png"
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Televicentro_HN_logo_2020.png"
                     width="120"
-                    alt="Plane"
-                    style="height: auto; display: block; margin: 0 auto;"
+                    style="display: block; margin: auto;"
                   />
                 </td>
               </tr>
@@ -107,63 +90,31 @@
         </tr>
       </table>
 
-      <!-- BODY (card under header) -->
-      <table role="presentation" width="100%">
+      <!-- BODY -->
+      <table width="100%">
         <tr>
           <td></td>
-          <td
-            class="email-container"
-            width="620"
-            style="width: 620px; max-width: 620px; margin: 0 auto;"
-          >
+          <td width="620" style="max-width: 620px; margin: auto;">
             <table
-              role="presentation"
-              width="100%"
               class="email-content"
-              style="background-color: #ffffff; padding: 32px 40px 32px 40px;"
+              width="100%"
+              style="background-color: #ffffff; padding: 32px 40px;"
             >
               <tr>
-                <td
-                  style="
-                    font-size: 16px;
-                    line-height: 1.5;
-                    color: #474747;
-                    padding: 24px;
-                  "
-                >
-                  <!-- ========================================= -->
-                  <!--     PLANE ANALYTICS DATA EXPORT EMAIL     -->
-                  <!-- ========================================= -->
-
-                  <!-- Heading -->
-                  <h1
-                    style="
-                      margin: 0 0 12px;
-                      font-size: 22px;
-                      line-height: 1.35;
-                      font-weight: 600;
-                      color: #111111;
-                    "
-                  >
-                    Your Plane Analytics export is ready
+                <td style="padding: 24px;">
+                  
+                  <h1 style="font-size: 22px; margin-bottom: 12px; color: #111;">
+                    Tu exportación de datos está lista
                   </h1>
 
-                  <!-- Body copy -->
-                  <p style="margin: 0 0 16px;">
-                    Your requested data export from Plane Analytics is ready. We’ve attached it as a CSV file for your convenience.
+                  <p style="margin-bottom: 16px;">
+                    La exportación de datos que solicitaste ya está lista. La hemos adjuntado como un archivo CSV para tu conveniencia.
                   </p>
 
-                  <!-- Small-note styled paragraphs -->
-                  <p
-                    style="
-                      margin: 0 0 12px;
-                      font-size: 13px;
-                      line-height: 1.6;
-                      color: #5f5e5e;
-                    "
-                  >
-                    You can open the CSV in any spreadsheet or BI tool to analyze the data, build reports, or share insights with your team.
+                  <p style="font-size: 13px; color: #5f5e5e;">
+                    Puedes abrir el archivo CSV en cualquier hoja de cálculo o herramienta de BI para analizar los datos, crear reportes o compartir información con tu equipo.
                   </p>
+
                 </td>
               </tr>
             </table>
@@ -173,34 +124,25 @@
       </table>
 
       <!-- FOOTER -->
-      <table role="presentation" width="100%">
+      <table width="100%">
         <tr>
           <td></td>
-          <td
-            class="email-container"
-            width="620"
-            style="width: 620px; max-width: 620px; margin: 0 auto;"
-          >
+          <td width="620" style="max-width: 620px; margin: auto;">
             <table
-              role="presentation"
-              width="100%"
               class="email-footer"
-              style="background-color: #ffffff; padding: 0 40px 16px 40px;"
+              width="100%"
+              style="background-color: #11406A; padding: 0 40px 16px;"
             >
               <tr>
                 <td
                   style="
-                    border-top: 1px solid #e9e9e9;
                     padding: 24px;
                     font-size: 12px;
-                    line-height: 1.6;
-                    color: #979797;
-                    text-align: left;
+                    color: #ffffff;
+                    border-top: 1px solid #ffffff30;
                   "
                 >
-                  <p style="margin: 0;">
-                    Plane Software, Inc.
-                  </p>
+                  <p></p>
                 </td>
               </tr>
             </table>
@@ -208,8 +150,7 @@
           <td></td>
         </tr>
       </table>
-    </center>
 
-    <base target="_blank" />
+    </center>
   </body>
 </html>
